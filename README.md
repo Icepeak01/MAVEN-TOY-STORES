@@ -1,7 +1,6 @@
 # MAVEN TOY STORES
 
-![Untitled-1](https://github.com/user-attachments/assets/8e18d280-7ec0-4e4a-99df-6408d1de4de6)
-
+![toys](https://github.com/user-attachments/assets/c33c4f26-d00c-421f-91c8-ae768526a7b1)
 
 
 
