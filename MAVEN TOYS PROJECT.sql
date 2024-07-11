@@ -69,7 +69,7 @@ ORDER BY
     p.product_category, total_profit DESC;
 
 
--- QIA
+--QUESTION 1. WHICH PRODUCT CATEGORIES DRIVE THE BIGGEST PROFITS?
 
 CREATE VIEW total_profit AS (
 	SELECT
@@ -101,7 +101,7 @@ ORDER BY product_profit DESC
 -- THE PRODUCT CATEGORY WITH THE HIGHEST PROFIT IS "TOYS"
 
 ------------------------------------------------------------------
---Q1B
+---- QUESTION 1B. IS THIS SAME ACROSS ALL STORE LOCATION SELECT
 
 SELECT
     p.product_category,
@@ -170,7 +170,7 @@ ORDER BY product_profit DESC;
 -- THEREFOR, THE HIGHEST PROFIT DRIVEN PRODUCT ARE NOT SAME ACROSS ALL STORE LOCATION
 
 
---Q2
+--QUESTION 2A. HOW MUCH MONEY IS TIED UP IN INVENTORY AT THE TOYS STORE?
 SELECT * FROM inventory;
 SELECT * FROM sales;
 SELECT * FROM stores;
@@ -188,8 +188,7 @@ ON i.product_id = p.product_id
 --THE TOTAL MONEY TIED DOWN IN THE INVENTORY IS $300,209.58
 
 
---Q2B
--- HOW LONG WILL IT LAST?
+--QUESTION 2B. HOW LONG WILL IT TAKE THE NUMBER OF STOCK ON HAND TO BE SOLD OUT?
 
 SELECT * FROM sales
 SELECT 
@@ -266,7 +265,7 @@ SELECT
 -- Since previous month total mothly sales is more than the total stock at hand, the money tied down in the inventory won't last more than a month.
 
 
---QUEST 3
+--QUESTION 3. ARE SALES BEING LOST WITH OUT OF STOCK PRODUCT AT CERTAIN LOCATION
 
 SELECT * FROM total_profit;
 
